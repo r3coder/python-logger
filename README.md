@@ -72,7 +72,11 @@ Logger가 말하는게 시끄러워요 (ㅠㅠ...) = `Log.SetMessages(False)`
 - 밝은 시안 = `bc`, `brightcyan`
 - 밝은 하양 (???) = `bw`, `brightwhite`
 
+### 실행 예시
 
+`showcase.py`를 실행한 예시입니다. 배경색이나 기타 등등은 테마나 환경에 따라 다른 색으로 나올 수도 있습니다.
+
+![showcase](imgs/showcase.png)
 
 # English version
 
@@ -124,7 +128,11 @@ I want to FLUSH this line! = `Log.Print("Message", flush=True)`
 I want logger to be shut up (;_;) = `Log.SetMessages(False)`
     This makes logger to be quiet... ㅠㅠ
 
+### Example
 
+This is exectued result of `showcase.py`. Background color may different by your user settings
+
+![showcase](imgs/showcase.png)
 
 # Bug report
 

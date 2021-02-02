@@ -88,7 +88,7 @@ class Logger:
 
     def SetMessages(self, b):
         assert b in [True, False], "Logger: Incorrect value has been inputed"
-        self.Message("Logger: Messages from logger is set to %s."%b)
+        self.Message("Logger: Messages from logger is set to %s."%b, f=True)
         self.messages = b
 
     def SetPrintCurrentTime(self, b):
@@ -112,8 +112,8 @@ class Logger:
         etH = int(et / 3600)
         return "%02d:%02d:%02d.%6d"%(etH,etM,etS,etMS)
 
-    def Message(self, msg):
-        if self.messages:
+    def Message(self, msg, f=False):
+        if self.messages or f:
             self.Print(msg,current=False,elapsed=False,col='k',bg='bc',file=False)
 
     def Print(self, msg, level = 0, current = True, elapsed = True, col='', bg='', end = '\n', file = True, flush = False):
