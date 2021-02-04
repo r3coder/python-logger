@@ -1,5 +1,5 @@
 ##############################
-# Logger 1.0 by R3C0D3r      #
+# Logger 1.0.1 by R3C0D3r    #
 # cryptographcode@gmail.com  #
 ##############################
 
@@ -106,11 +106,11 @@ class Logger:
 
     def GetElapsedTime(self):
         et = datetime.now().timestamp() - self.timeInit
-        etMS = int(et * 1000) % 1000
+        etMS = int(et * 1000000) % 1000000
         etS = int(et % 60)
         etM = int((et / 60) % 60)
         etH = int(et / 3600)
-        return "%02d:%02d:%02d.%6d"%(etH,etM,etS,etMS)
+        return "%02d:%02d:%02d.%6s"%(etH,etM,etS,str(etMS).zfill(6))
 
     def Message(self, msg, f=False):
         if self.messages or f:

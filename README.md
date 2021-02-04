@@ -141,3 +141,13 @@ This is exectued result of `showcase.py`. Background color may different by your
 위에 issue 파 주시면 감사하겠습니다.
 
 기능 추가도 필요하시면 말해 주세요. 제가 필요하면 추가함 히히
+
+
+
+
+
+# Changelog
+
+### 1.0.1
+
+소숫점 뒤쪽이 표시 안 되던 버그 수정
